@@ -1,3 +1,6 @@
+// browser.build-jotai.main/reactNil
+const reactNil = require("./react-nil")
+
 // browser.build-jotai.main/valtio
 const valtio = require("./valtio")
 
@@ -14,8 +17,9 @@ const jotaiUtils = require("./jotai/utils")
 const jotaiValtio = require("./jotai/valtio")
 
 // browser.build-jotai.main/__init__
-window["valtio"] = valtio;
-window["valtioUtils"] = valtioUtils;
-window["jotai"] = jotai;
-window["jotaiUtils"] = jotaiUtils;
-window["jotaiValtio"] = jotaiValtio;
+globalThis["renderNil"] = reactNil.render;
+globalThis["valtio"] = valtio;
+globalThis["valtioUtils"] = valtioUtils;
+globalThis["jotai"] = jotai;
+globalThis["jotaiUtils"] = jotaiUtils;
+globalThis["jotaiValtio"] = jotaiValtio;
