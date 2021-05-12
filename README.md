@@ -6,7 +6,8 @@ Steps to reconstruct this repo
 2.  pnpm i - to generate esm artifacts
 3.  copy the .js files over to src/jotai and src/valio folders
 4.  change the require(….) statements so that files match up
-5.  This is super dumb but gives the outputs I need
+5.  run browserify . -d -o bundle.js
+6.  This is super dumb but gives the outputs I need
 
 ### Dev
 

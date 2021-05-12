@@ -1,23 +1,21 @@
 {
-  "name": "jotai",
-  "main": "src/main.js",
-  "scripts": {
-    "package": "browserify . -d -o bundle.js",
-    "release": "cp bundle.js $(git root)/resources/assets/rt.webview/jotai.js"
+  "name" : "browser.build-jotai",
+  "main" : "src/main.js",
+  "scripts" : {
+    "package" : "browserify . -d -o bundle.js",
+    "release" : "cp bundle.js $(git root)/resources/assets/rt.webview/jotai.js"
   },
-  "dependencies": {
-    "proxy-compare": "^1.1.6"
+  "dependencies" : {
+    "proxy-compare" : "^1.1.6"
   },
-  "devDependencies": {
-    "browserify": "^17.0.0",
-    "browserify-shim": "^3.8.14"
+  "devDependencies" : {
+    "browserify" : "^17.0.0",
+    "browserify-shim" : "^3.8.14"
   },
-  "browserify-shim": {
-    "react": "global:React"
+  "browserify-shim" : {
+    "react" : "global:React"
   },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
+  "browserify" : {
+    "transform" : [ "browserify-shim" ]
   }
 }
