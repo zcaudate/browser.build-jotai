@@ -3,7 +3,7 @@
   "main" : "src/main.js",
   "scripts" : {
     "package" : "browserify . -d -o bundle.js",
-    "release" : "cp bundle.js $(git root)/resources/assets/rt.webview/jotai.js"
+    "release" : "cp bundle.js ../../../../resources/assets/rt.webview/jotai.js"
   },
   "dependencies" : {
     "proxy-compare" : "^1.1.6"
